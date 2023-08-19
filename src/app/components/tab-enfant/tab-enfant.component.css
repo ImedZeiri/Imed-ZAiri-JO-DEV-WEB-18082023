@@ -1,0 +1,388 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  margin-top: -10px;
+}
+.header{
+  display: flex;
+  margin-top: 30px;
+}
+.Top-section,
+.Bottom-section {
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.information{
+  margin: 20px;
+  height: 100px;
+  display: flex;
+}
+
+.section {
+  padding: 10px;
+}
+
+.section-width-30 {
+  width: 10%;
+}
+
+.section-width-70 {
+  width: 90%;
+}
+
+.bottom-section {
+  padding: 20px;
+  margin: 10px;
+}
+
+.circle-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Ajustez la taille de l'image circulaire */
+  height: 100px; /* Ajustez la taille de l'image circulaire */
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 10px;
+
+}
+
+.circle-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text {
+  text-align: left;
+  margin-left: 10px;
+  color: rgba(15, 15, 15, 0.78);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-start; /* Alignement des boutons à gauche */
+  margin-top: 10px;
+}
+
+
+.button {
+  background-color: #fff;
+  color: #3a98b9;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #3a98b9;
+  height: 30px;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, rgb(58, 128, 185) 19%, rgb(160, 212, 229) 100%);
+  color: white;
+}
+
+.button i {
+  margin-right: 8px;
+}
+
+.button:hover i {
+  color: white; /* Change la couleur de l'icône lors du survol */
+}
+.button:active,
+.button.active {
+  background: linear-gradient(90deg, rgb(58, 128, 185) 19%, rgb(160, 212, 229) 100%);
+  color: white;
+}
+
+
+
+
+.custom-form {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  width: 48%; /* Pour occuper environ la moitié de l'espace */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+  text-align: left;
+  color: #464545;
+}
+.radio-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-buttons label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.radio-buttons input[type="radio"] {
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+}
+
+
+.form-button {
+  display: flex;
+  justify-content: flex-end; /* Alignement des boutons à gauche */
+  margin-top: 20px; /* Marge au-dessus des boutons */
+}
+
+.btn-annuler,
+.btn-enregistrer {
+  background-color: lightgray;
+  color: #343434;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.btn-enregistrer {
+  background: linear-gradient(90deg, rgb(58, 128, 185) 19%, rgb(160, 212, 229) 100%);
+  color: white;
+}
+.social-media-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.content {
+  flex: 1;
+}
+
+.address {
+  margin-bottom: 5px;
+  margin-left: 20%;
+  width: 50%;
+  color: #3a3939;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.add-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  background: transparent;
+  border-radius: 5px;
+  color: #626161;
+  cursor: pointer;
+  display: flex;
+}
+.fa-plus-circle{
+  background: #777676;
+  color: white;
+  border: 2px solid #777676;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+.icon img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.content{
+  display: flex;
+}
+.address {
+  cursor: pointer;
+}
+
+.editable {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.delete-btn {
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+.app-card{
+  display: flex;
+}
+
+.user-card {
+  top: 12px;
+  width: 100%;
+  max-width: 280px;
+  height: 89px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-style: dashed;
+}
+
+.user-card:hover,
+.user-card:active {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.3s;
+}
+
+.user-card:hover .user-image,
+.user-card:active .user-image {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.card-body {
+  padding: 20px;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: dodgerblue;
+  font-size: 35px;
+}
+
+.user-card:hover .card-body,
+.user-card:active .card-body {
+  background: linear-gradient(90deg, rgb(58, 128, 185) 19%, rgb(160, 212, 229) 100%);
+  color: white;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  color: #333;
+  background: transparent;
+  border: 2px solid #777676;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40%;
+  margin-right: 30px;
+}
+
+.card-text i {
+  padding: 0;
+}
+
+
+h5 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 1.5rem;
+  color: #4dbfe0; /* Couleur du texte */
+  padding-bottom: 0.25rem;
+}
+h6 {
+  text-align: left;
+  color: #333;
+}
+
+.blue-background {
+  background-color: #6a9f85;
+}
+
+.orange-background {
+  background-color: #ff4400;
+}
+
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgba(58, 152, 185, 0.66); /* Couleur de base de la bordure */
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  border-color: blue;
+}

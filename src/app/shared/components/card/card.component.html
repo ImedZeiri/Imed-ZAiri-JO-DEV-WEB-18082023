@@ -1,0 +1,6 @@
+<div class="card user-card" (click)="onClick()">
+  <img [src]="nomEnfant?.imageUrl" class="user-image" alt="User" [ngClass]="{'blue-background': nomEnfant?.genre === 'garçon', 'orange-background': nomEnfant?.genre === 'fille'}">
+  <div class="card-body text-center">
+    <p class="card-text">{{ nomEnfant?.non }} {{ nomEnfant?.prenom | capitalize }}</p>
+  </div>
+</div>

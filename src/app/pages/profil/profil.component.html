@@ -1,0 +1,15 @@
+<div class="app-container">
+  <div class="header">
+    <button class="tab-button" [class.active]="activeTab === 1" (click)="showTab(1)">Modifier mon profil</button>
+    <button class="tab-button" [class.active]="activeTab === 2" (click)="showTab(2)">Mes Enfants</button>
+  </div>
+
+  <div class="content-container">
+    <div class="tab-content" [class.active]="activeTab === 1">
+      <app-tab-profil></app-tab-profil>
+    </div>
+    <div class="tab-content" [class.active]="activeTab === 2">
+      <app-tab-enfant></app-tab-enfant>
+    </div>
+  </div>
+</div>
